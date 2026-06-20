@@ -1,6 +1,22 @@
 # 铁壳训练 (GymPulse)
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-1C1A18?style=flat-square&labelColor=070504&color=D33D2C)](LICENSE)
+[![Platform: Android](https://img.shields.io/badge/Platform-Android-1C1A18?style=flat-square&labelColor=070504&color=4CAF6E)](https://developer.android.com)
+[![Min SDK: 26](https://img.shields.io/badge/Min_SDK-26-1C1A18?style=flat-square&labelColor=070504&color=ECEBEA)](https://developer.android.com/about/versions/8.0)
+[![Release: v0.0.1](https://img.shields.io/badge/Release-v0.0.1-1C1A18?style=flat-square&labelColor=070504&color=D9733A)](https://github.com/cwj214228/GymPulse/releases/tag/v0.0.1)
+
 一款为健身爱好者设计的极简训练记录 Android App。暗色工业锻造风格界面、本地存储、零网络依赖。
+
+## 📥 下载
+
+**最新版本: [v0.0.1](https://github.com/cwj214228/GymPulse/releases/tag/v0.0.1)** · 1.5 MB · arm64
+
+[⬇ 下载 APK (GymPulse-Android-v0.0.1-arm64.apk)](https://github.com/cwj214228/GymPulse/releases/download/v0.0.1/GymPulse-Android-v0.0.1-arm64.apk)
+
+```bash
+# 通过 ADB 安装
+adb install GymPulse-Android-v0.0.1-arm64.apk
+```
 
 ## 📱 截图
 
@@ -31,11 +47,27 @@
 - 部位训练频次水平条形图
 - 本月训练日历热力图
 
-### ⚙️ 数据持久化
+### ⚙️ 设置与数据持久化
 - 所有数据存储在手机本地 Room 数据库
-- 支持**导出 JSON 备份**到 Download 目录
-- 重装 app 后可通过**导入 JSON 恢复**数据
-- 系统设置入口：首页右上角 ⚙ 按钮
+- 入口：首页右上角 ⚙ 按钮
+- 训练数据 **JSON 导入/导出** — 防止卸载丢失
+
+#### 导出训练记录
+1. 主页 → 右上角 ⚙
+2. 点击「↓ 导出训练记录」
+3. 选择「保存到 Download 目录」(或分享到网盘/电脑)
+4. 备份文件：`/sdcard/Download/gympulse_backup_yyyyMMdd_HHmmss.json`
+
+#### 导入训练记录 (重装后恢复)
+1. 主页 → 右上角 ⚙
+2. 点击「↑ 导入训练记录」
+3. 选择之前的 JSON 备份文件
+4. Toast 提示「已导入 N 条记录」
+
+#### 建议备份策略
+- 每月导出一次
+- 复制到网盘 (iCloud / 百度网盘 / OneDrive) 或电脑
+- MIUI / ColorOS 等定制系统卸载 app 时会清空内部数据,但 Download 目录是用户可见存储,**不会**被清掉
 
 ---
 
@@ -133,22 +165,15 @@ GymPulse/
 ## 📲 安装
 
 ```bash
-adb push app-release.apk /data/local/tmp/
-adb shell pm install /data/local/tmp/app-release.apk
+# 1. 下载或构建 APK
+# 2. 通过 ADB 安装 (Bypass MIUI 弹窗)
+adb push GymPulse-Android-v0.0.1-arm64.apk /data/local/tmp/
+adb shell pm install -r /data/local/tmp/app-release.apk
 adb shell rm /data/local/tmp/app-release.apk
 ```
-
-## 🗃️ 数据备份/恢复
-
-| 操作 | 路径 |
-|------|------|
-| 导出 | 主页 → ⚙ → 导出训练记录 → 保存到 Download 目录 |
-| 导入 | 主页 → ⚙ → 导入训练记录 → 选择 JSON 文件 |
-
-备份文件命名：`gympulse_backup_yyyyMMdd_HHmmss.json`
 
 ---
 
 ## 📄 License
 
-MIT License
+[MIT License](LICENSE) © 2026 cwj214228
