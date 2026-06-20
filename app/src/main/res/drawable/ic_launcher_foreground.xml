@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!--
+    铁壳训练 · 启动图标 — 工业锻造风格杠铃
+    Safe zone: 36-72dp (inner 72×72)
+    -->
+
+    <!-- 左侧铃片外侧 -->
+    <path
+        android:fillColor="#D33D2C"
+        android:pathData="M19,39 L28,39 L28,69 L19,69 Z" />
+
+    <!-- 左侧铃片内侧 -->
+    <path
+        android:fillColor="#E85541"
+        android:pathData="M31,37 L36,37 L36,71 L31,71 Z" />
+
+    <!-- 左侧铃片刻线 -->
+    <path
+        android:fillColor="#070504"
+        android:pathData="M23,43 L26,43 L26,65 L23,65 Z" />
+
+    <!-- 横杆 (主) -->
+    <path
+        android:fillColor="#A8A6A4"
+        android:pathData="M36,47 L72,47 L72,61 L36,61 Z" />
+
+    <!-- 横杆高光 -->
+    <path
+        android:fillColor="#CECCCA"
+        android:pathData="M36,47 L72,47 L72,51 L36,51 Z" />
+
+    <!-- 横杆阴影 -->
+    <path
+        android:fillColor="#7A7775"
+        android:pathData="M36,58 L72,58 L72,61 L36,61 Z" />
+
+    <!-- 横杆中心滚花纹理 -->
+    <path
+        android:fillColor="#070504"
+        android:pathData="M48,47 L48,61 L50,61 L50,47 Z M52,47 L52,61 L54,61 L54,47 Z M56,47 L56,61 L58,61 L58,47 Z M60,47 L60,61 L62,61 L62,47 Z" />
+
+    <!-- 右侧铃片内侧 -->
+    <path
+        android:fillColor="#E85541"
+        android:pathData="M72,37 L77,37 L77,71 L72,71 Z" />
+
+    <!-- 右侧铃片外侧 -->
+    <path
+        android:fillColor="#D33D2C"
+        android:pathData="M80,39 L89,39 L89,69 L80,69 Z" />
+
+    <!-- 右侧铃片刻线 -->
+    <path
+        android:fillColor="#070504"
+        android:pathData="M82,43 L85,43 L85,65 L82,65 Z" />
+
+    <!-- 顶部装饰 (盾形轮廓) -->
+    <path
+        android:fillColor="#D33D2C"
+        android:fillAlpha="0.15"
+        android:pathData="M36,18 L72,18 C74,18 76,20 76,22 L76,86 C76,88 74,88 72,88 L36,88 C34,88 32,88 32,86 L32,22 C32,20 34,18 36,18 Z" />
+
+</vector>

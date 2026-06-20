@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- 铁壳训练 · 启动图标背景 — 锻铁质感 -->
+
+    <!-- 底色 -->
+    <path
+        android:fillColor="#070504"
+        android:pathData="M0,0 L108,0 L108,108 L0,108 Z" />
+
+    <!-- 顶部锻造光泽 -->
+    <path
+        android:fillColor="#12100D"
+        android:pathData="M0,0 L108,0 L108,54 Q54,48 0,54 Z" />
+
+    <!-- 底部暗色 -->
+    <path
+        android:fillColor="#040302"
+        android:pathData="M0,108 L108,108 L108,65 Q54,72 0,65 Z" />
+
+    <!-- 锻造锤纹 1 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.015"
+        android:pathData="M25,25 L35,25 L35,28 L25,28 Z M70,78 L82,78 L82,81 L70,81 Z M15,60 L22,60 L22,63 L15,63 Z M88,35 L95,35 L95,38 L88,38 Z" />
+
+    <!-- 锻造锤纹 2 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.02"
+        android:pathData="M40,20 L55,20 L55,22 L40,22 Z M60,85 L75,85 L75,87 L60,87 Z" />
+
+</vector>
